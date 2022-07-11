@@ -14,7 +14,7 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import * as roadmap from "./HomePage.module.css";
 import curve from "./curve.png";
-import bgimg from "./bgimg.png"
+import bgimg from "./assets/bgimg.png"
 import image10 from "./image10.png"
 import phoneimg from "./phoneimg.png"
 import two from "./two.png"
@@ -144,24 +144,26 @@ const HomePage = () => {
   };
   let drawer = (
     <div >
-   
+
       <div
         style={{
           display: "flex",
           justifyContent: "center",
           alignItems: "baseline",
           marginLeft: "40px",
-          paddingLeft:"-40px"
+          paddingLeft: "-40px"
         }}
       >
         <img
-        style={{position:" absolute",
-          width: "464px",
-          height: "104px",
-          left: "79px",
-          top: "56px"}}
+          style={{
+            position: " absolute",
+            width: "464px",
+            height: "104px",
+            left: "79px",
+            top: "56px"
+          }}
           src={image10}
-          
+
         />
         {/* <h2
           style={{
@@ -176,179 +178,187 @@ const HomePage = () => {
         </h2> */}
       </div>
       <Box
-      sx={{
-        // display: "flex",
-        // display: { xs: 'none', lg: 'block' },
-        justifyContent: "space-between",
-        alignItems: "center",
-        width: { lg: "90vw !important", xs: "100vw !important" },
-        position: "fixed",
-        position: "-webkit-sticky",
-        top: "0",
-        zIndex: 100,
-      }}
-      display={{ lg: "flex", xs: "block" }}
-    >
-      <Container
-       sx={{
-        display: { xs: 'block', lg: 'none' },
-       }}
-      >
-        <Typography
-          variant="h1" sx={{ color: 'white', position: 'absolute', right: 0, marginTop: '-100px', marginRight: drawerOpen ? '8px' : '30px' }}> {drawerOpen == false ? <MenuIcon onClick={() => { setDrawerOpen(true) }} sx={{ color: 'white', fontSize: '2.5rem' }} /> : <CloseIcon onClick={() => { setDrawerOpen(false) }} sx={{ color: 'white', fontSize: '2.5rem' }} /> }</Typography>
-      </Container>
-   
-      <Container
         sx={{
-          display: { xs: drawerOpen ? 'grid' : 'none', lg: 'flex' },
-          justifyContent: { lg: "space-between", xs: "space-around" },
-          alignItems: "center",
-          flex: "0.2",
-          marginRight: 'unset'
+          // display: "flex",
           // display: { xs: 'none', lg: 'block' },
+          justifyContent: "space-between",
+          alignItems: "center",
+          width: { lg: "90vw !important", xs: "100vw !important" },
+          position: "fixed",
+          position: "-webkit-sticky",
+          top: "0",
+          zIndex: 100,
         }}
+        display={{ lg: "flex", xs: "block" }}
       >
-        <Box component="span"
-          // sx={{
-          //   color: "white",
-          //   fontSize: { lg: "20px", xs: "25px" },
-          //   cursor: "pointer",
-          //   padding: { lg: "10px", xs: "5px" },
-          //   textAlign: { lg: "unset", xs: "center" },
-          // }}
-          style={{position: "absolute",
-            width: "94px",
-            height: "42px",
-            left: "745px",
-            top: "35px",
-            
-            fontFamily: 'Roboto',
-            fontStyle: "normal",
-            fontWeight: "700",
-            fontSize: "30px",
-            lineHeight: "45px",
-            
-            /* White */
-            
-            color: "#FFFFFF",
-            
-           
-            textShadow:"0px 4px 4px rgba(0, 0, 0, 0.25)"}}
-        >
-          About
-        </Box>
-        <Box component="span"
-          // sx={{
-          //   color: "white",
-          //   fontSize: { lg: "20px", xs: "25px" },
-          //   cursor: "pointer",
-          //   padding: { lg: "10px", xs: "5px" },
-          //   textAlign: { lg: "unset", xs: "center" },
-          // }}
-          style={{position: "absolute",
-            width: "122px",
-            height: "42px",
-            left: "862px",
-            top: "35px",
-            
-            fontFamily: 'Roboto',
-            fontStyle: "normal",
-            fontWeight: "700",
-            fontSize: "30px",
-            lineHeight: "45px",
-            
-            /* White */
-            
-            color: "#FFFFFF",
-            
-           
-            textShadow:"0px 4px 4px rgba(0, 0, 0, 0.25)"}}
-        >
-          Product
-        </Box>
-        <Box component="span"
-        //   sx={{
-        //     color: "white",
-        //     fontSize: { lg: "20px", xs: "25px" },
-        //     cursor: "pointer",
-        //     padding: { lg: "10px", xs: "5px" },
-        //     textAlign: { lg: "unset", xs: "center" },
-        //   }}
-        //
-        style={{position: "absolute",
-            width: "152px",
-            height: "42px",
-            left: "1005px",
-            top: "35px",
-            
-            fontFamily: 'Roboto',
-            fontStyle: "normal",
-            fontWeight: "700",
-            fontSize: "30px",
-            lineHeight: "45px",
-            
-            /* White */
-            
-            color: "#FFFFFF",
-            
-           
-            textShadow:"0px 4px 4px rgba(0, 0, 0, 0.25)"}}
-         >
-          Roadmap
-        </Box>
-
-        <span
-          style={{
-            color: "white",
-            fontSize: "20px",
-            cursor: "pointer",
-            padding: "10px",
+        <Container
+          sx={{
+            display: { xs: 'block', lg: 'none' },
           }}
         >
-          <ButtonBootstrap style={{position:" absolute",
-            width: "170px",
-            height: "52px",
-            left: "1172px",
-            top:"31px",
+          <Typography
+            variant="h1" sx={{ color: 'white', position: 'absolute', right: 0, marginTop: '-100px', marginRight: drawerOpen ? '8px' : '30px' }}> {drawerOpen == false ? <MenuIcon onClick={() => { setDrawerOpen(true) }} sx={{ color: 'white', fontSize: '2.5rem' }} /> : <CloseIcon onClick={() => { setDrawerOpen(false) }} sx={{ color: 'white', fontSize: '2.5rem' }} />}</Typography>
+        </Container>
 
-            background: "#6714E5",
-            boxShadow:" 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25)",
-            borderRadius: "10px"}}>
-            <div style={{ display: "flex", flexDirection: "column" }}>
-              <Box component="span"
-                sx={{
-                  fontSize: { lg: "20px", xs: "25px" },
-                }}
-              >
-                Login/Register
-              </Box>
-              <Box component="span"
-                sx={{
-                  fontSize: { lg: "15px", xs: "15px" },
-                  fontWeight: "525",
-                  fontFamily: [
-                    "-apple-system",
-                    "BlinkMacSystemFont",
-                    '"Segoe UI"',
-                    "Roboto",
-                    '"Helvetica Neue"',
-                    "Arial",
-                    "sans-serif",
-                    '"Apple Color Emoji"',
-                    '"Segoe UI Emoji"',
-                    '"Segoe UI Symbol"',
-                  ].join(","),
-                }}
-              >
-                (Coming Soon)
-              </Box>
+        <Container
+          sx={{
+            display: { xs: drawerOpen ? 'grid' : 'none', lg: 'flex' },
+            justifyContent: { lg: "space-between", xs: "space-around" },
+            alignItems: "center",
+            flex: "0.2",
+            marginRight: 'unset'
+            // display: { xs: 'none', lg: 'block' },
+          }}
+        >
+          <Box component="span"
+            // sx={{
+            //   color: "white",
+            //   fontSize: { lg: "20px", xs: "25px" },
+            //   cursor: "pointer",
+            //   padding: { lg: "10px", xs: "5px" },
+            //   textAlign: { lg: "unset", xs: "center" },
+            // }}
+            style={{
+              position: "absolute",
+              width: "94px",
+              height: "42px",
+              left: "745px",
+              top: "35px",
 
-            </div>
-          </ButtonBootstrap>
-        </span>
-      </Container>
-   
-    </Box>
+              fontFamily: 'Roboto',
+              fontStyle: "normal",
+              fontWeight: "700",
+              fontSize: "30px",
+              lineHeight: "45px",
+
+              /* White */
+
+              color: "#FFFFFF",
+
+
+              textShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)"
+            }}
+          >
+            About
+          </Box>
+          <Box component="span"
+            // sx={{
+            //   color: "white",
+            //   fontSize: { lg: "20px", xs: "25px" },
+            //   cursor: "pointer",
+            //   padding: { lg: "10px", xs: "5px" },
+            //   textAlign: { lg: "unset", xs: "center" },
+            // }}
+            style={{
+              position: "absolute",
+              width: "122px",
+              height: "42px",
+              left: "862px",
+              top: "35px",
+
+              fontFamily: 'Roboto',
+              fontStyle: "normal",
+              fontWeight: "700",
+              fontSize: "30px",
+              lineHeight: "45px",
+
+              /* White */
+
+              color: "#FFFFFF",
+
+
+              textShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)"
+            }}
+          >
+            Product
+          </Box>
+          <Box component="span"
+            //   sx={{
+            //     color: "white",
+            //     fontSize: { lg: "20px", xs: "25px" },
+            //     cursor: "pointer",
+            //     padding: { lg: "10px", xs: "5px" },
+            //     textAlign: { lg: "unset", xs: "center" },
+            //   }}
+            //
+            style={{
+              position: "absolute",
+              width: "152px",
+              height: "42px",
+              left: "1005px",
+              top: "35px",
+
+              fontFamily: 'Roboto',
+              fontStyle: "normal",
+              fontWeight: "700",
+              fontSize: "30px",
+              lineHeight: "45px",
+
+              /* White */
+
+              color: "#FFFFFF",
+
+
+              textShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)"
+            }}
+          >
+            Roadmap
+          </Box>
+
+          <span
+            style={{
+              color: "white",
+              fontSize: "20px",
+              cursor: "pointer",
+              padding: "10px",
+            }}
+          >
+            <ButtonBootstrap style={{
+              position: " absolute",
+              width: "170px",
+              height: "52px",
+              left: "1172px",
+              top: "31px",
+
+              background: "#6714E5",
+              boxShadow: " 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25)",
+              borderRadius: "10px"
+            }}>
+              <div style={{ display: "flex", flexDirection: "column" }}>
+                <Box component="span"
+                  sx={{
+                    fontSize: { lg: "20px", xs: "25px" },
+                  }}
+                >
+                  Login/Register
+                </Box>
+                <Box component="span"
+                  sx={{
+                    fontSize: { lg: "15px", xs: "15px" },
+                    fontWeight: "525",
+                    fontFamily: [
+                      "-apple-system",
+                      "BlinkMacSystemFont",
+                      '"Segoe UI"',
+                      "Roboto",
+                      '"Helvetica Neue"',
+                      "Arial",
+                      "sans-serif",
+                      '"Apple Color Emoji"',
+                      '"Segoe UI Emoji"',
+                      '"Segoe UI Symbol"',
+                    ].join(","),
+                  }}
+                >
+                  (Coming Soon)
+                </Box>
+
+              </div>
+            </ButtonBootstrap>
+          </span>
+        </Container>
+
+      </Box>
     </div>
   )
   async function postData() {
@@ -385,7 +395,7 @@ const HomePage = () => {
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
-    
+
       }}
     >
       <ToastContainer style={{ fontSize: "16px" }} theme="dark" />
@@ -405,11 +415,11 @@ const HomePage = () => {
           <Box
             sx={{
               background: `url(${bgimg})`,
-              position:" absolute",
+              position: " absolute",
               width: "1440px",
               height: "756px",
-              left:" 0px",
-              top:" 0px",
+              left: " 0px",
+              top: " 0px",
 
               // backgroundRepeat: "no-repeat",
               // backgroundPosition: "bottom",
@@ -443,7 +453,7 @@ const HomePage = () => {
                 backgroundPosition: "bottom center",
                 backgroundSize: "cover",
                 backgroundRepeat: "no-repeat",
-                
+
               }}
             >
               <Box
@@ -452,7 +462,7 @@ const HomePage = () => {
                   alignItems: "center",
                   justifyContent: "center",
                   width: "100%",
-                
+
                 }}
                 display={{ lg: 'flex', xs: "block" }}
               >
@@ -470,65 +480,68 @@ const HomePage = () => {
                     fontWeight: "500",
                     fontSize: "64px",
                     lineHeight: "70px",
-                    
+
                     /* or 109% */
                     letterSpacing: "1em",
                   }}
                 >
                   <Typography
-                    style={{ position: "absolute",
+                    style={{
+                      position: "absolute",
                       width: "989px",
-                      height:"209px",
+                      height: "209px",
                       right: "220px",
                       top: "230px",
-                      fontFamily:"Roboto",
-                     
+                      fontFamily: "Roboto",
+
                       fontStyle: "normal",
                       fontWeight: "700",
                       fontSize: "66px",
                       lineHeight: "99px",
                       textAlign: "center",
                       color: "#fff",
-                
+
                     }}
-                   
+
                   >
 
 
 
 
 
-                      Time to colonize 
-                      </Typography>
-                      <Typography
-                    style={{ position: "absolute",
-                    width: "989px",
-                    height:"209px",
-                    right: "226px",
-                    top: "320px",
-                    fontFamily:"Roboto",
-                   
-                    fontStyle: "normal",
-                    fontWeight: "700",
-                    fontSize: "66px",
-                    lineHeight: "99px",
-                    textAlign: "center",
-                    color: "#fff"}}
-                   
+                    Time to colonize
+                  </Typography>
+                  <Typography
+                    style={{
+                      position: "absolute",
+                      width: "989px",
+                      height: "209px",
+                      right: "226px",
+                      top: "320px",
+                      fontFamily: "Roboto",
+
+                      fontStyle: "normal",
+                      fontWeight: "700",
+                      fontSize: "66px",
+                      lineHeight: "99px",
+                      textAlign: "center",
+                      color: "#fff"
+                    }}
+
                   >
 
 
 
 
 
-                    the world of 
-                   
+                    the world of
+
                     <Box component="span"
                       sx={{
-                       
-                    fontStyle: "normal",
-                    fontWeight: "700",
-                    fontSize: "66px",
+
+                        fontStyle: "normal",
+                        fontWeight: "700",
+                        fontSize: "66px",
                         color: "#D03434",
                         // fontSize: "60px",
                         marginTop: "5px",
@@ -536,54 +549,60 @@ const HomePage = () => {
                       }}
                       fontSize={{ lg: "60px", xs: "22px" }}
                     >
-               
-                        WEB 3.0
+
+                      WEB 3.0
                     </Box>
-               
-                    </Typography>
-                    <Typography
-                    style={{position: "absolute",
-                    width: "989px",
-                    height:"209px",
-                    right: "226px",
-                    top: "410px",
-                    fontFamily:"Roboto",
-                   
-                    fontStyle: "normal",
-                    fontWeight: "700",
-                    fontSize: "66px",
-                    lineHeight: "99px",
-                    textAlign: "center",
-                    color: "#fff",
-                    textShadow:" 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 0px 4px #FF66DA"}}
-                   
+
+                  </Typography>
+                  <Typography
+                    style={{
+                      position: "absolute",
+                      width: "989px",
+                      height: "209px",
+                      right: "226px",
+                      top: "410px",
+                      fontFamily: "Roboto",
+
+                      fontStyle: "normal",
+                      fontWeight: "700",
+                      fontSize: "66px",
+                      lineHeight: "99px",
+                      textAlign: "center",
+                      color: "#fff",
+                      textShadow: " 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 0px 4px #FF66DA"
+                    }}
+
                   >
 
 
 
 
 
-                   with different communities
-                      </Typography>
-                  <Container style={{marginTop:"280px",marginLeft:"40px",width: "285px",height: "63px"}}>
-                    <ButtonBootstrap style={{position: "absolute",
-                                              width:"475.2px",
-                                            height: "88px",
-                                            left: "490px",
-                                            top:" 600px",
+                    with different communities
+                  </Typography>
+                  <Container style={{ marginTop: "280px", marginLeft: "40px", width: "285px", height: "63px" }}>
+                    <ButtonBootstrap style={{
+                      position: "absolute",
+                      width: "475.2px",
+                      height: "88px",
+                      left: "490px",
+                      top: " 600px",
 
-                                          /* Select Gradient */
+                      /* Select Gradient */
 
-                                          background: "linear-gradient(135deg, #6F14E3 0%, #5713E6 77.08%, #5F11DF 100%)",
-                                          borderRadius: "46px"}}>
+                      background: "linear-gradient(135deg, #6F14E3 0%, #5713E6 77.08%, #5F11DF 100%)",
+                      borderRadius: "46px"
+                    }}>
                       <a
                         href="#subscribe"
-                        style={{align:"center" ,verticalAlign:"center",letterSpacing:"1.6%",
-                         textDecoration: "none", color: "white",fontFamily: 'Roboto',
-                         fontStyle: "normal",
-                         fontWeight: "500",
-                         fontSize: "41px",
-                         lineHeight:"62px "}}
+                        style={{
+                          align: "center", verticalAlign: "center", letterSpacing: "1.6%",
+                          textDecoration: "none", color: "white", fontFamily: 'Roboto',
+                          fontStyle: "normal",
+                          fontWeight: "500",
+                          fontSize: "41px",
+                          lineHeight: "62px "
+                        }}
                       >
 
                         Get Early Access
@@ -606,16 +625,16 @@ const HomePage = () => {
 
         <Box
           className="white-box"
-          style={{backgroundColor:"#0e031a", width: "100vw" ,marginTop:"68%"}}
+          style={{ backgroundColor: "#0e031a", width: "100vw", marginTop: "68%" }}
         >
           <Box>
             <Stack>
               <Typography
-             
+
                 variant="h2"
                 textAlign="center"
                 sx={{
-                  position:"relative",
+                  position: "relative",
                   margin: "0px",
                   fontSize: "35px",
                   marginLeft: "20px",
@@ -623,7 +642,7 @@ const HomePage = () => {
                   fontWeight: "800",
                   // textDecoration: "underline",
                   paddingBottom: "60px",
-                 
+
                 }}
                 m={{ xs: "0px" }}
                 pb={{ xs: "10px" }}
@@ -648,18 +667,18 @@ const HomePage = () => {
                     width: "200px",
                     textAlign: "right",
                     borderBottom: "2px solid white",
-                    fontFamily:"Roboto",
-                    lineHeight:"99px",
-                   
-                    
+                    fontFamily: "Roboto",
+                    lineHeight: "99px",
+
+
                   }}
                 >
-               What is Rari
+                  What is Rari
                 </span>
                 <span
                   style={{
                     color: "#BD2222",
-                                       
+
                     margin: "0px",
                     paddingBottom: "8px",
                     fontsize: "45px",
@@ -680,14 +699,14 @@ const HomePage = () => {
                     borderBottom: "2px solid white  ",
                   }}
                 >
-                  
+
                 </span>
               </Typography>
               <Grid container style={{ marginBottom: 150 }}>
                 <Grid item lg={6.5} xs={12} md={12} my={"30px"} pl={{ xs: "7vw", lg: "7vw" }} mr={{ xs: "5vw", lg: "0px" }}>
                   <Stack justifyContent="center">
                     <p
-                     
+
                       justifyContent="center"
                       style={{
                         // marginLeft: "7vw",
@@ -702,14 +721,14 @@ const HomePage = () => {
 
                         /* Gray */
                         color: "white",
-                        fontFamily:"Roboto"
+                        fontFamily: "Roboto"
                       }}
                     >
                       Rariko is a decentralized social messaging platform
-                       that allows users to create an identity, socialize
-                        with fellow blockchain sapiens and access all
-                         their favorite communities in few clicks.
-      </p>
+                      that allows users to create an identity, socialize
+                      with fellow blockchain sapiens and access all
+                      their favorite communities in few clicks.
+                    </p>
                     <p
                       style={{
                         // marginLeft: "7vw",
@@ -724,46 +743,50 @@ const HomePage = () => {
 
                         /* Gray */
                         color: "white",
-                        fontFamily:"Roboto"
+                        fontFamily: "Roboto"
                       }}
                     >
-                     We are introducing a safer and simpler community management
-                      tools. Finally a platform built 
-                     for real users not for bots and scammers.
+                      We are introducing a safer and simpler community management
+                      tools. Finally a platform built
+                      for real users not for bots and scammers.
                     </p>
                     <ButtonBootstrap
-                    style={{position:"absolute",
-                      width: "204px",
-                      height: "65px",
-                      left: "90px",
-                      top: "1370px",
-                      
-                      /* Select Gradient */
-                      
-                      background: "linear-gradient(135deg, #6F14E3 0%, #5713E6 77.08%, #5F11DF 100%)",
-                      borderRadius: "10px"}}
-                      // sx={{
-                      //   height: "50px",
-                      //   width: "95px",
-                      //   alignSelf: { lg: "center", xs: "center"},
-                      // }}
+                      style={{
+                        position: "absolute",
+                        width: "204px",
+                        height: "65px",
+                        left: "90px",
+                        top: "1370px",
+
+                        /* Select Gradient */
+
+                        background: "linear-gradient(135deg, #6F14E3 0%, #5713E6 77.08%, #5F11DF 100%)",
+                        borderRadius: "10px"
+                      }}
+                    // sx={{
+                    //   height: "50px",
+                    //   width: "95px",
+                    //   alignSelf: { lg: "center", xs: "center"},
+                    // }}
                     >
-                      <p style={{position: "absolute",
-                                width: "95px",
-                                height: "50px",
-                                top:"8px",
-                             
+                      <p style={{
+                        position: "absolute",
+                        width: "95px",
+                        height: "50px",
+                        top: "8px",
 
-                                fontFamily: 'Roboto',
-                                fontStyle: "normal",
-                                fontWeight:"700",
-                                fontSize: "28px",
-                                lineHeight: "50px",
-                                /* identical to box height, or 179% */
 
-                                display: "flex",
-                                alignItems: "center"}}>
-                      Explore</p>
+                        fontFamily: 'Roboto',
+                        fontStyle: "normal",
+                        fontWeight: "700",
+                        fontSize: "28px",
+                        lineHeight: "50px",
+                        /* identical to box height, or 179% */
+
+                        display: "flex",
+                        alignItems: "center"
+                      }}>
+                        Explore</p>
                     </ButtonBootstrap>
                   </Stack>
                 </Grid>
@@ -772,16 +795,16 @@ const HomePage = () => {
                     sx={{ width: "100%", position: "relative" }}
                     height={{ xs: "7vh", lg: "70vh" }}
                     mt={{ xs: "100px", lg: "0px" }}
-                    style={{paddingLeft:"70%",marginTop:"-70%"}}
+                    style={{ paddingLeft: "70%", marginTop: "-70%" }}
                   >
-                              <img
+                    <img
                       src={three}
                       alt="desktop"
-                      style={{ width: "800px",height:"600px",paddingLeft:"250px" ,paddingTop:"30px"}}
+                      style={{ width: "800px", height: "600px", paddingLeft: "250px", paddingTop: "30px" }}
 
                     ></img>
-                        </Box>
-                   
+                  </Box>
+
                 </Grid>
               </Grid>
             </Stack>
@@ -817,7 +840,7 @@ const HomePage = () => {
                     borderBottom: "2px solid white",
                   }}
                 >
-                 Product Highlights
+                  Product Highlights
                 </span>
                 <span
                   style={{
@@ -829,7 +852,7 @@ const HomePage = () => {
                     borderBottom: "2px solid white",
                   }}
                 >
-                 
+
                 </span>
                 <span
                   style={{
@@ -842,7 +865,7 @@ const HomePage = () => {
                     borderBottom: "2px solid white",
                   }}
                 >
-                 
+
                 </span>
               </Typography>
             </Grid>
@@ -866,17 +889,17 @@ const HomePage = () => {
                   //background: "#5F4AE0",
                   width: "336px",
                   height: "336px",
-                //  borderRadius: "16px",
+                  //  borderRadius: "16px",
                   padding: "8px",
                   display: "flex",
                   flexDirection: "column",
                   justifyContent: "center",
                   alignItems: "center",
                   background: "linear-gradient(135deg, #6F14E3 0%, #5713E6 77.08%, #5F11DF 100%)",
-                  backdropFilter:"blur(4px)",
-/* Note: backdrop-filter has minimal browser support */
+                  backdropFilter: "blur(4px)",
+                  /* Note: backdrop-filter has minimal browser support */
 
-                borderRadius: "20px"
+                  borderRadius: "20px"
                 }}
               >
                 <img
@@ -888,11 +911,11 @@ const HomePage = () => {
                   style={{
                     display: "flex",
                     alignItems: "center",
-                    textAlign:"center",
+                    textAlign: "center",
                     justifyContent: "center",
                   }}
                 >
-                 Anonyomous Profiles
+                  Anonyomous Profiles
                 </h1>
               </div>
             </Grid>
@@ -910,9 +933,9 @@ const HomePage = () => {
                 style={{
                   border: "1px solid white",
                   background: "#689CD8",
-                //  height: "15rem",
+                  //  height: "15rem",
                   borderRadius: "16px",
-                 // height: "20rem",
+                  // height: "20rem",
                   borderRadius: "16px",
                   padding: "10px",
                   display: "flex",
@@ -970,7 +993,7 @@ const HomePage = () => {
                     justifyContent: "center",
                   }}
                 >
-               communities
+                  communities
                 </h1>
               </div>
             </Grid>
@@ -997,9 +1020,9 @@ const HomePage = () => {
                   sx={{
                     border: "1px solid white",
                     background: "#282828",
-                   // height: "18rem",
+                    // height: "18rem",
                     borderRadius: "16px",
-                   // height: "unset",
+                    // height: "unset",
                     borderRadius: "16px",
                     padding: "10px",
                     display: { xs: "block", lg: "flex" },
@@ -1007,7 +1030,7 @@ const HomePage = () => {
                     justifyContent: "center",
                     alignItems: "center",
                     width: "554px",
-                    height:"308px"
+                    height: "308px"
                   }}
                 >
                   <img src={vector4} className="col-sm-6" alt="" />
@@ -1020,10 +1043,10 @@ const HomePage = () => {
                       justifyContent: "center",
                       fontSize: { xs: "25px", lg: "42px" },
                       fontWeight: 500,
-                      textAlign:"center"
+                      textAlign: "center"
                     }}
                   >
-               Governance tools
+                    Governance tools
                   </Typography>
                 </Container>
               </Container>
@@ -1038,9 +1061,9 @@ const HomePage = () => {
                   sx={{
                     border: "1px solid white",
                     background: "#282828",
-                   // height: "18rem",
+                    // height: "18rem",
                     borderRadius: "16px",
-                   // height: "unset",
+                    // height: "unset",
                     borderRadius: "16px",
                     padding: "10px",
                     display: { xs: "block", lg: "flex" },
@@ -1048,7 +1071,7 @@ const HomePage = () => {
                     justifyContent: "center",
                     alignItems: "center",
                     width: "554px",
-                    height:"308px"
+                    height: "308px"
                   }}
                 >
                   <img className="col-sm-6" src={vector5} alt="" style={{ marginBottom: "50px", marginTop: "-50px" }} />
@@ -1062,7 +1085,7 @@ const HomePage = () => {
                       fontSize: { xs: "25px", lg: "42px" },
                       fontWeight: 500,
                       marginTop: { xs: "-30px", lg: "0px" },
-                      textAlign:"center"
+                      textAlign: "center"
                     }}
                   >
                     Socialize and Earn (S&E)
@@ -1073,70 +1096,74 @@ const HomePage = () => {
           </Grid>
         </Box>
       </Container>
-      <div style={{background: "radial-gradient(88.28% 88.28% at 24.34% 11.72%, #040130 0%, #111111 45.31%, #101010 100%"
-     }}>
-      <Box sx={{ width: "100vw" }}
-        display={{ xs: 'none', lg: 'flex' }}
-      >
-           
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <div style={{background: "radial-gradient(88.28% 88.28% at 24.34% 11.72%, #040130 0%, #111111 45.31%, #101010 100%"
-     }}>
-          <path
-            fill="#0e031a"
-            fill-opacity="1"
-            d="M0,96L60,101.3C120,107,240,117,360,112C480,107,600,85,720,69.3C840,53,960,43,1080,42.7C1200,43,1320,53,1380,58.7L1440,64L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
-          ></path>
-           </div>
-        </svg>
-       
-      </Box>
-     
-      <Box
-        sx={{
-          position: "relative",
-          padding: "0px",
-          transform: "translate(0,-10rem)",
-          background: `url(${timeline})`,
-          backgroundRepeat: "no-repeat",
-          backgroundPosition: "bottom",
-          backgroundSize: "contain",
-          width: "100vw",
-          // height: "100rem",
-          
-         // backgroundColor: "radial-gradient(88.28% 88.28% at 24.34% 11.72%, #040130 0%, #111111 45.31%, #101010 100%"
-          // margin: 10
-        }}
-        height={{ xs: "70vh", lg: "100rem" }}
-        m={{ xs: "10px", lg: "10px" }}
-        mt={{ xs: "180px", lg: "100px" }}
-      >
-        
+      <div style={{
+        background: "radial-gradient(88.28% 88.28% at 24.34% 11.72%, #040130 0%, #111111 45.31%, #101010 100%"
+      }}>
+        <Box sx={{ width: "100vw" }}
+          display={{ xs: 'none', lg: 'flex' }}
+        >
 
-        <Typography
-          variant="h2"
-        //   sx={{ paddingTop:"-200px",marginTop: "-px", textAlign: "center", fontSize: 40, fontWeight: 500 }}
-        //   mt={{ xs: "0px", lg: "-90px" }}
-        //
-        style={{
-          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <div style={{
+              background: "radial-gradient(88.28% 88.28% at 24.34% 11.72%, #040130 0%, #111111 45.31%, #101010 100%"
+            }}>
+              <path
+                fill="#0e031a"
+                fill-opacity="1"
+                d="M0,96L60,101.3C120,107,240,117,360,112C480,107,600,85,720,69.3C840,53,960,43,1080,42.7C1200,43,1320,53,1380,58.7L1440,64L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
+              ></path>
+            </div>
+          </svg>
 
-        }}>
-          <span style={{ position: "relative",
-          width: "118px",
-          height: "112px",
-          left: "550px",
-          top: "-100px",
+        </Box>
 
-        
+        <Box
+          sx={{
+            position: "relative",
+            padding: "0px",
+            transform: "translate(0,-10rem)",
+            background: `url(${timeline})`,
+            backgroundRepeat: "no-repeat",
+            backgroundPosition: "bottom",
+            backgroundSize: "contain",
+            width: "100vw",
+            // height: "100rem",
 
-          color: "white",borderBottom:"2px solid white"}}>
-          Roadmap
-          </span>
-        </Typography>
-        
-      </Box>
-     </div>   {/* <Box
+            // backgroundColor: "radial-gradient(88.28% 88.28% at 24.34% 11.72%, #040130 0%, #111111 45.31%, #101010 100%"
+            // margin: 10
+          }}
+          height={{ xs: "70vh", lg: "100rem" }}
+          m={{ xs: "10px", lg: "10px" }}
+          mt={{ xs: "180px", lg: "100px" }}
+        >
+
+
+          <Typography
+            variant="h2"
+            //   sx={{ paddingTop:"-200px",marginTop: "-px", textAlign: "center", fontSize: 40, fontWeight: 500 }}
+            //   mt={{ xs: "0px", lg: "-90px" }}
+            //
+            style={{
+
+
+            }}>
+            <span style={{
+              position: "relative",
+              width: "118px",
+              height: "112px",
+              left: "550px",
+              top: "-100px",
+
+
+
+              color: "white", borderBottom: "2px solid white"
+            }}>
+              Roadmap
+            </span>
+          </Typography>
+
+        </Box>
+      </div>   {/* <Box
         className="white-box"
         style={{ backgroundColor: "white", width: "100vw", height: "100px" }}
       >
@@ -1202,16 +1229,16 @@ const HomePage = () => {
       </Box> */}
       <Container
         sx={{
-     
+
           maxWidth: "1500% !important",
-         
+
           display: { lg: "flex", xs: "block" },
           justifyContent: "center",
           width: "100vw",
           height: { lg: "35vh", xs: "auto" },
-          backgroundColor:"#0e031a",
-         marginLeft:"-135px"
-        
+          backgroundColor: "#0e031a",
+          marginLeft: "-135px"
+
         }}
       >
         <Grid container style={{ display: "flex", justifyContent: "center" }}>
@@ -1224,11 +1251,11 @@ const HomePage = () => {
                 marginTop: "2.5rem",
               }}
             >
-              <img
-                src={require("../RarikoLogoFinal.png")}
+              {/* <img
+                src={require("./RarikoLogoFinal.png")}
                 height="80"
                 width="80"
-              />
+              /> */}
               <h2
                 style={{
                   margin: "0px",
@@ -1360,7 +1387,7 @@ const HomePage = () => {
           </Grid>
         </Grid>
       </Container>
-      <div style={{textAlign:"center", fontSize: "20px" ,paddingTop:"10px",paddingBottom:"10px"}}>Ⓒ All rights reserved 2022</div>
+      <div style={{ textAlign: "center", fontSize: "20px", paddingTop: "10px", paddingBottom: "10px" }}>Ⓒ All rights reserved 2022</div>
     </div>
   );
 };
